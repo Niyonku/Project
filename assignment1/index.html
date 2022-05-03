@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+      .container {
+        background-image: url("Layer1.svg");
+        background-size: 48%;
+        font-family: poppins, sans-serif;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        margin: 100px;
+        background-image: url("Layer2.svg");
+        background-size: 100%;
+        padding: 40px 47px;
+      }
+      .header-text {
+        margin: 0 !important;
+      }
+      .input-box {
+        border: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+      }
+
+      .space {
+        margin-right: 24px;
+      }
+      .length {
+        width: 66%;
+        margin-top: 12px;
+      }
+      button {
+        padding: 8px 13px;
+        background-color: #ff8d5e;
+        margin-top: 16px;
+        border: 1px solid #ff8d5e;
+        color: #fff;
+      }
+      .first-col {
+        border-right: 1px solid #efefef;
+      }
+      .second-col {
+        margin-left: 54px;
+        padding-right: 32%;
+      }
+      .title {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h1 class="header-text">Fill the form.</h1>
+          <h1 class="header-text">it's easy.</h1>
+        </div>
+        <div class="first-col">
+          <form>
+            <input
+              type="text"
+              name="Fname"
+              placeholder="First name"
+              class="input-box space"
+            />
+            <input
+              type="text"
+              name="Lname"
+              placeholder="Last name"
+              class="input-box"
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input-box length"
+            />
+            <p>
+              Briefly tell us about your project and your current goals.
+              <br />
+              How can we help you?
+            </p>
+            <input type="text" name="textarea" class="input-box length" />
+          </form>
+          <button>Send message</button>
+        </div>
+        <div class="second-col">
+          <h2>Need Presentation</h2>
+          <p>
+            You like what we do,but you need to demonstrate your team as
+            well.Easy! Directly download,print or share the link to a PDF with
+            your colleagues.
+          </p>
+          <p>&adarr company profile.pdf(32mb)</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
